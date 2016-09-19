@@ -58,6 +58,8 @@ And you'd see the wireshark instance running on h3 capturing the traffic. (h3 co
 
 Note that even if the destination IP provided for the traffic generation was one of the hosts h1, h2 or h3 the reply back from the destination wouldn't reach the source because of the protocol filtering behavior of the switch. You can try this out by making the destination IP one of the hosts. In Wireshark, you would see a reply from the host destination but the packet wouldn't reach the source because of the switch's behaviour.
 
-Of course you would never be able to make TCP connections using this switch because the handshake wouldn't complete every single time. But a packet filter is meant to capture packets (a rudimentary Wireshark), not serve as a tool for communication and for that purpose, the switch functions nicely.
+Of course you would never be able to make TCP connections using this switch because the protocol filtering properties of the switch directly imply that TCP handshakes would never be able to complete . 
+
+But a packet filter is meant to capture packets (a rudimentary Wireshark), not serve as a tool for communication and for that purpose, the switch functions nicely.
 
 To convince yourself of the workings of the switch and get a better understanding of how the control behavior dynamically changes with the ingressed packet, I encourage you to experiment with traffic generation from h2 or h3 and then see the traffic flow.
