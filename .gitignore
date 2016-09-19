@@ -1,0 +1,7 @@
+/build
+/.*_ts
+/dependmodules.x
+/packet_filter.mk
+/*.pcap
+/packet_filter
+/tests/pd_thrift
