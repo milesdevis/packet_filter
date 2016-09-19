@@ -9,11 +9,14 @@ https://github.com/p4lang/p4factory
 Then create support functionality for this switch: 
 
 cd p4factory/tools 
+
 ./newtarget.py packet_filter
 
 Then you should have a directory named "packet_filter" in the targets directory of the main folder.
 
 Remove the contents "packet_filter" folder in targets and paste the contents of this repo over there.
+
+Then cut the "pf_demo.py" file from here and go to p4factory/mininet/ and paste it there
 
 
 Then, to build and run the packet filter:
