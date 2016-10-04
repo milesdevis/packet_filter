@@ -26,7 +26,8 @@ make bm
 This should result in an executable in the same directory called "behavioral model"
 
 ##Functionality
-		The packet filter has protocol dependent control behaviour. Specifically, it forwards ICMP packets based on IP destination but segregates TCP traffic and UDP traffic into their respective ports, irrespective of source or destination IP. It drops all other IP packets. Therefore, based on the ingressed packet, the control behaviour of the switch alternates between forwarding and filtering of IP packets. 
+		
+The packet filter has protocol dependent control behaviour. Specifically, it forwards ICMP packets based on IP destination but segregates TCP traffic and UDP traffic into their respective ports, irrespective of source or destination IP. It drops all other IP packets. Therefore, based on the ingressed packet, the control behaviour of the switch alternates between forwarding and filtering of IP packets. 
 
 Functionality has been provided for IPV4 only, for the purposes of simplicity of demonstration.
 
